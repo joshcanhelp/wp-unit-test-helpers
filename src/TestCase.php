@@ -51,9 +51,9 @@ abstract class WpTestCase extends \PHPUnit\Framework\TestCase {
 	public function tearDown() {
 		parent::tearDown();
 
-		$_GET = [];
-		$_POST = [];
-		$_REQUEST = [];
+		$_GET     = array();
+		$_POST    = array();
+		$_REQUEST = array();
 
 		if ( method_exists( $this, 'stopAjaxHalting' ) ) {
 			$this->stopAjaxHalting();

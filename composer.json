@@ -10,7 +10,17 @@
             "email": "josh@joshcanhelp.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "*",
+        "wp-coding-standards/wpcs": "*",
+        "phpcompatibility/phpcompatibility-wp": "*"
+    },
+    "scripts": {
+        "phpcs": "\"vendor/bin/phpcs\"",
+        "phpcbf": "\"vendor/bin/phpcbf\"",
+        "sniffs": "\"vendor/bin/phpcs\" -e"
+    },
     "autoload": {
         "classmap": [
             "src/"

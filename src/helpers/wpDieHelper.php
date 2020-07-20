@@ -33,22 +33,26 @@ trait WpDieHelper {
 		return array( $this, 'haltWpDie' );
 	}
 
-  /**
-   * Handle wp_die().
-   *
-   * @param string $message - Message to display
-   * @param string $title - Page title
-   * @param int|array $args - Response code or array of options.
-   *
-   * @throws \Exception
-   */
+	/**
+	 * Handle wp_die().
+	 *
+	 * @param string    $message - Message to display
+	 * @param string    $title - Page title
+	 * @param int|array $args - Response code or array of options.
+	 *
+	 * @throws \Exception
+	 */
 	public function haltWpDie( $message, $title, $args ) {
-    throw new WpDieHaltException( wp_json_encode( [
-      'message' => $message,
-      'title'   => $title,
-      'args'    => $args,
-    ] ) );
-  }
+		throw new WpDieHaltException(
+			wp_json_encode(
+				array(
+					'message' => $message,
+					'title'   => $title,
+					'args'    => $args,
+				)
+			)
+		);
+	}
 
 	/**
 	 * Stop halting wp_die.

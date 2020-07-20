@@ -45,8 +45,8 @@ trait AjaxHelpers {
 	 * @throws AjaxHaltException - Always, to stop AJAX process.
 	 */
 	public function haltAjax( $message, $title, $args ) {
-    $is_bad_nonce = -1 === $message && ! empty( $args[ 'response' ] ) && 403 === $args[ 'response' ];
-    throw new AjaxHaltException( $is_bad_nonce ? 'bad_nonce' : 'die_ajax' );
+		$is_bad_nonce = -1 === $message && ! empty( $args['response'] ) && 403 === $args['response'];
+		throw new AjaxHaltException( $is_bad_nonce ? 'bad_nonce' : 'die_ajax' );
 	}
 
 	/**

@@ -4,6 +4,6 @@ namespace WpUnitTestHelpers\Exceptions;
 class WpDieHaltException extends \Exception {
 
 	public function getDecodedMessage() {
-		return json_decode( $this->message, TRUE );
+		return json_decode( $this->message, true );
 	}
 }

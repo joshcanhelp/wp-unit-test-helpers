@@ -1,0 +1,19 @@
+{
+    "name": "joshcanhelp/wp-unit-test-helpers",
+    "description": "A set of traits to help you write unit tests for WP plugins and themes",
+    "license": "MIT",
+    "type": "library",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Josh Cunningham",
+            "email": "josh@joshcanhelp.com"
+        }
+    ],
+    "require": {}
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    }
+}

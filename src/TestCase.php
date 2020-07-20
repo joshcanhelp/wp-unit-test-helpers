@@ -35,7 +35,7 @@ abstract class WpTestCase extends \PHPUnit\Framework\TestCase {
 		$wpdb->suppress_errors = false;
 		$wpdb->show_errors     = true;
 		$wpdb->db_connect();
-		ini_set( 'display_errors', 1 );
+		ini_set( 'display_errors', '1' );
 
 		// Reset plugin options?
 		// Reset test user data?

@@ -38,7 +38,7 @@ trait AjaxHelpers {
 	 * Stop AJAX requests by throwing an exception.
 	 * Hooked to: wp_die_ajax_handler
 	 *
-	 * @param string}int $message - Message for die page.
+	 * @param string|int $message - Message for die page.
 	 * @param string     $title - Title for die page, not used.
 	 * @param array      $args - Other args.
 	 *

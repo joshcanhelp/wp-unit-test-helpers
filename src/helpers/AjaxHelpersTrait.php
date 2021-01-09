@@ -1,6 +1,6 @@
 <?php
 /**
- * Contains Trait AjaxHelpers.
+ * Contains Trait AjaxHelpersTrait.
  *
  * @package WpUnitTestHelpers
  *
@@ -12,9 +12,9 @@ namespace WpUnitTestHelpers\Helpers;
 use WpUnitTestHelpers\Exceptions\AjaxHaltException;
 
 /**
- * Trait AjaxHelpers.
+ * Trait AjaxHelpersTrait.
  */
-trait AjaxHelpers {
+trait AjaxHelpersTrait {
 
 	/**
 	 * Set a filter to halt AJAX requests with an exception.

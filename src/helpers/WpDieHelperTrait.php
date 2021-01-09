@@ -1,6 +1,6 @@
 <?php
 /**
- * Contains Trait WpDieHelper.
+ * Contains Trait WpDieHelperTrait.
  *
  * @package WpUnitTestHelpers
  *
@@ -12,9 +12,9 @@ namespace WpUnitTestHelpers\Helpers;
 use WpUnitTestHelpers\Exceptions\WpDieHaltException;
 
 /**
- * Trait WpDieHelper.
+ * Trait WpDieHelperTrait.
  */
-trait WpDieHelper {
+trait WpDieHelperTrait {
 
 	/**
 	 * Start halting all wp_die calls.

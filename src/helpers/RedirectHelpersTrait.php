@@ -1,6 +1,6 @@
 <?php
 /**
- * Contains Trait RedirectHelpers.
+ * Contains Trait RedirectHelpersTrait.
  *
  * @package WpUnitTestHelpers
  *
@@ -12,9 +12,9 @@ namespace WpUnitTestHelpers\Helpers;
 use WpUnitTestHelpers\Exceptions\RedirectHaltException;
 
 /**
- * Trait RedirectHelpers.
+ * Trait RedirectHelpersTrait.
  */
-trait RedirectHelpers {
+trait RedirectHelpersTrait {
 
 	/**
 	 * Start halting all redirects.

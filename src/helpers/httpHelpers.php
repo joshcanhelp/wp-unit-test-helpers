@@ -9,6 +9,7 @@
 
 namespace WpUnitTestHelpers\Helpers;
 
+use WP_Error;
 use WpUnitTestHelpers\Exceptions\HttpHaltException;
 
 /**
@@ -71,10 +72,12 @@ trait HttpHelpers {
 	}
 
 	public function setHttpMockResponse( ?int $code, string $body = '' ) {
-		$this->http_request_type[] = is_null( $code ) ? new \WP_Error( '__test_wp_error_message__' ) : array(
-			'response' => array( 'code' => $code ),
-			'body'     => $body,
-		);
+		$this->http_request_type[] = is_null( $code )
+			? new WP_Error( '__test_wp_error_message__' )
+			: array(
+				'response' => array( 'code' => $code ),
+				'body'     => $body,
+			);
 	}
 
 	public function httpMock() {

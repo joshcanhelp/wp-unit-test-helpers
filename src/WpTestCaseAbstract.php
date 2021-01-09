@@ -8,12 +8,12 @@ namespace WpUnitTestHelpers;
  */
 abstract class WpTestCaseAbstract extends \PHPUnit\Framework\TestCase {
 
-	use Helpers\AjaxHelpers;
-	use Helpers\HookHelpers;
-	use Helpers\HttpHelpers;
-	use Helpers\RedirectHelpers;
-	use Helpers\WpDieHelper;
-	use Helpers\WpScriptsHelper;
+	use Helpers\AjaxHelpersTrait;
+	use Helpers\HookHelpersTrait;
+	use Helpers\HttpHelpersTrait;
+	use Helpers\RedirectHelpersTrait;
+	use Helpers\WpDieHelperTrait;
+	use Helpers\WpScriptsHelperTrait;
 
 	/**
 	 * Runs before test suite starts.

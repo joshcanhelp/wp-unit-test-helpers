@@ -1,6 +1,6 @@
 <?php
 /**
- * Contains Trait WpScriptsHelper.
+ * Contains Trait WpScriptsHelperTrait.
  *
  * @package WpUnitTestHelpers
  *
@@ -10,9 +10,9 @@
 namespace WpUnitTestHelpers\Helpers;
 
 /**
- * Trait WpScriptsHelper.
+ * Trait WpScriptsHelperTrait.
  */
-trait WpScriptsHelper {
+trait WpScriptsHelperTrait {
 
 	public function getScript( $script_name, $var_name = '' ) {
 		$scripts = wp_scripts();

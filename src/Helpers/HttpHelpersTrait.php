@@ -1,6 +1,6 @@
 <?php
 /**
- * Contains Trait HttpHelpers.
+ * Contains Trait HttpHelpersTrait.
  *
  * @package WpUnitTestHelpers
  *
@@ -13,9 +13,9 @@ use WP_Error;
 use WpUnitTestHelpers\Exceptions\HttpHaltException;
 
 /**
- * Trait HttpHelpers.
+ * Trait HttpHelpersTrait.
  */
-trait HttpHelpers {
+trait HttpHelpersTrait {
 
 	/**
 	 * Mocked HTTP response(s) to return.

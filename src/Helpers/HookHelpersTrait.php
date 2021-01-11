@@ -1,6 +1,6 @@
 <?php
 /**
- * Contains Trait HookHelpers.
+ * Contains Trait HookHelpersTrait.
  *
  * @package WpUnitTestHelpers
  *
@@ -10,9 +10,9 @@
 namespace WpUnitTestHelpers\Helpers;
 
 /**
- * Trait HookHelpers.
+ * Trait HookHelpersTrait.
  */
-trait HookHelpers {
+trait HookHelpersTrait {
 
 	/**
 	 * Get all hooked functions from a hook name.

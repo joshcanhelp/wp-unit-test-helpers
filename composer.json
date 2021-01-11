@@ -23,8 +23,8 @@
         "sniffs": "\"vendor/bin/phpcs\" -e"
     },
     "autoload": {
-        "classmap": [
-            "src/"
-        ]
+        "psr-4": {
+            "WpUnitTestHelpers\\": "src/"
+        }
     }
 }

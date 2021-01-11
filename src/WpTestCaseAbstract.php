@@ -3,17 +3,17 @@
 namespace WpUnitTestHelpers;
 
 /**
- * Class SampleTestCase.
+ * Class WpTestCaseAbstract.
  * Extend this class to use it as a template for your own test cases.
  */
-abstract class WpTestCase extends \PHPUnit\Framework\TestCase {
+abstract class WpTestCaseAbstract extends \PHPUnit\Framework\TestCase {
 
-	use Helpers\AjaxHelpers;
-	use Helpers\HookHelpers;
-	use Helpers\HttpHelpers;
-	use Helpers\RedirectHelpers;
-	use Helpers\WpDieHelper;
-	use Helpers\WpScriptsHelper;
+	use Helpers\AjaxHelpersTrait;
+	use Helpers\HookHelpersTrait;
+	use Helpers\HttpHelpersTrait;
+	use Helpers\RedirectHelpersTrait;
+	use Helpers\WpDieHelperTrait;
+	use Helpers\WpScriptsHelperTrait;
 
 	/**
 	 * Runs before test suite starts.
